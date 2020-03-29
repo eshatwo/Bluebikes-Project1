@@ -1,0 +1,30 @@
+#mapid { 
+    height: 500px; 
+    width: 600px;
+
+}
+
+.container-fluid {
+    background-color: aqua;
+    height: 800px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+img {
+    height: 200px;
+    width: 100px;
+}
+
+p {
+    padding-left: 50px;
+    border: 200px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#gender {
+    height: 300px;
+    width: 400px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: bisque;
+    padding: 20px;
+}

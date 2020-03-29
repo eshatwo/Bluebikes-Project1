@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Metadata -->
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title -->
+		<title>Bluebikes Project</title>
+    
+    <!-- CSS Styling -->
+		<link rel="stylesheet" href="style.css">
+
+    <!--Bootstrap Styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- Leaflet Scripts -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+
+   <!-- D3 Scripts-->
+   <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+    <body>
+        <!-- The container for all the components of the dashboard.-->
+        <div class = "container-fluid">
+            <div id="header">
+                <h1>
+                    Bluebikes Assessment: College Students
+                </h1>
+            
+                
+            </div> 
+
+            <div class="row">
+                <div class="col">
+                    <div id="mapid"></div>
+                </div>
+
+                <div class="col">
+                    <div id="gender" class="container">
+                        <div class="row">
+                            <div class="col">
+                                <img src="images/165bd4d41a7e46a57b6ec758b3bbc8d1_blue-person-symbol-clip-art-at-clkercom-vector-clip-art-online-_228-587.png" alt="m">
+                            </div>
+                            <div class="col">
+                                <img src="images/unnamed.png" alt="f">
+                            </div>
+                            <div class="col">
+                                <h3>Other</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p style="color:blue;" id="p_males">loading...</p>
+                            </div>
+                            <div class="col">
+                                <p id="p_females">loading...</p>
+                            </div>
+                            <div class="col">
+                                <p id="p_other"></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+           
+
+            
+            
+        </div>
+
+        <script src="leaflet.js"></script>
+        <script src="lib/d3.v5.12.0/d3.min.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+    </body>
